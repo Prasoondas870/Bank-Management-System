@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalTrust Bank - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bank-header">
+        <div class="header-content">
+            <img src="assets/images/logo-white.png" alt="GlobalTrust Bank" class="logo">
+            <div class="user-info">
+                <span class="welcome">Welcome, John Doe</span>
+                <div class="account-number">Account: •••• •••• 7890</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="dashboard-container">
+        <div class="account-summary animate-fade-in">
+            <div class="balance-card">
+                <div class="balance-info">
+                    <div class="label">Available Balance</div>
+                    <div class="amount">$12,456.78</div>
+                    <div class="account-type">Premium Savings Account</div>
+                </div>
+                <div class="balance-icon">
+                    <i class="fas fa-wallet"></i>
+                </div>
+            </div>
+            
+            <div class="quick-actions">
+                <div class="action transfer-funds">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Transfer</span>
+                </div>
+                <div class="action pay-bills">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <span>Pay Bills</span>
+                </div>
+                <div class="action deposit">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Deposit</span>
+                </div>
+                <div class="action more">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <span>More</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="recent-transactions animate-fade-in delay-1">
+            <h2><i class="fas fa-history"></i> Recent Transactions</h2>
+            <div class="transactions-list">
+                <div class="transaction">
+                    <div class="transaction-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="transaction-details">
+                        <div class="transaction-title">Amazon Purchase</div>
+                        <div class="transaction-date">Today, 10:45 AM</div>
+                    </div>
+                    <div class="transaction-amount debit">-$45.67</div>
+                </div>
+                
+                <div class="transaction">
+                    <div class="transaction-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <div class="transaction-details">
+                        <div class="transaction-title">Salary Deposit</div>
+                        <div class="transaction-date">May 1, 2023</div>
+                    </div>
+                    <div class="transaction-amount credit">+$3,456.00</div>
+                </div>
+                
+                <div class="transaction">
+                    <div class="transaction-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="transaction-details">
+                        <div class="transaction-title">Restaurant Payment</div>
+                        <div class="transaction-date">Apr 28, 2023</div>
+                    </div>
+                    <div class="transaction-amount debit">-$78.90</div>
+                </div>
+            </div>
+            
+            <a href="transactions.html" class="view-all">View All Transactions <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="other-accounts animate-fade-in delay-2">
+            <h2><i class="fas fa-piggy-bank"></i> Your Accounts</h2>
+            <div class="accounts-grid">
+                <div class="account">
+                    <div class="account-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="account-details">
+                        <div class="account-name">Checking Account</div>
+                        <div class="account-balance">$5,678.90</div>
+                    </div>
+                </div>
+                
+                <div class="account">
+                    <div class="account-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="account-details">
+                        <div class="account-name">Investment Account</div>
+                        <div class="account-balance">$23,456.78</div>
+                    </div>
+                </div>
+                
+                <div class="account">
+                    <div class="account-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="account-details">
+                        <div class="account-name">Credit Card</div>
+                        <div class="account-balance">-$1,234.56</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bank-navigation">
+        <a href="dashboard.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="transactions.html" class="nav-item">
+            <i class="fas fa-exchange-alt"></i>
+            <span>Transactions</span>
+        </a>
+        <a href="transfer.html" class="nav-item">
+            <i class="fas fa-money-bill-transfer"></i>
+            <span>Transfer</span>
+        </a>
+        <a href="settings.html" class="nav-item">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+        </a>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

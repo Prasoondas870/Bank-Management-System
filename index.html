@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalTrust Bank - Secure Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="bank-logo animate-float">
+            <img src="assets/images/logo.png" alt="GlobalTrust Bank">
+        </div>
+        
+        <div class="card-reader-container">
+            <div class="card-reader animate-glow">
+                <div class="card-slot"></div>
+                <div class="card-insert-instruction">
+                    <i class="fas fa-arrow-down"></i> Insert your ATM card
+                </div>
+            </div>
+        </div>
+        
+        <div class="login-form hidden animate-fade-in">
+            <h2>Enter Your PIN</h2>
+            <div class="pin-input">
+                <input type="password" maxlength="1" class="pin-digit">
+                <input type="password" maxlength="1" class="pin-digit">
+                <input type="password" maxlength="1" class="pin-digit">
+                <input type="password" maxlength="1" class="pin-digit">
+            </div>
+            <div class="keypad">
+                <div class="key" data-value="1">1</div>
+                <div class="key" data-value="2">2</div>
+                <div class="key" data-value="3">3</div>
+                <div class="key" data-value="4">4</div>
+                <div class="key" data-value="5">5</div>
+                <div class="key" data-value="6">6</div>
+                <div class="key" data-value="7">7</div>
+                <div class="key" data-value="8">8</div>
+                <div class="key" data-value="9">9</div>
+                <div class="key" data-value="clear">C</div>
+                <div class="key" data-value="0">0</div>
+                <div class="key" data-value="enter"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="forgot-pin">
+                <a href="#">Forgot PIN?</a>
+            </div>
+        </div>
+        
+        <div class="login-status"></div>
+    </div>
+    
+    <div class="bank-footer">
+        <p>GlobalTrust Bank - Secure Banking Solutions</p>
+        <div class="security-badge">
+            <i class="fas fa-lock"></i> 256-bit SSL Encryption
+        </div>
+    </div>
+    
+    <script src="js/card-reader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
